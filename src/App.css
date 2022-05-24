@@ -1,0 +1,126 @@
+.App {
+  text-align: left;
+  background-color: #121211;
+  width: 100vw;
+  height: 100vh;
+  color: beige;
+}
+
+body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  height: 30px;
+  width: 100%;
+  margin: 2;
+  border-bottom: 1px solid grey;
+  display: grid;
+  place-items: left;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 50px;
+}
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: left;
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 3px;
+}
+
+.letter {
+  flex: 50%;
+  height: 100%;
+  border: 2px solid grey;
+  margin: 1px;
+  display: grid;
+  place-items: left;
+  font-size: 50px;
+  font-weight: bolder;
+  color: beige;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#correct {
+  background-color: #fefbd8;
+}
+
+#almost {
+  background-color: #fefbd8;
+}
+
+#error {
+  background-color: #fefbd8;
+}
+
+.keyboard {
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.line1 {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: left;
+  margin: 5px;
+}
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 10px;
+}
+.line3 {
+  flex: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 10px;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  display: grid;
+  place-items: left;
+  font-size: 50px;
+  background-color: grey;
+  color: beige;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+
+#big {
+  width: 50px;
+}
+#disabled {
+  background-color: #fefbd8;
+}
